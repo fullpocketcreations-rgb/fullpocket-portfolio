@@ -1,0 +1,11 @@
+# Private invoice files & client billing records
+*.jpg
+*.jpeg
+*.pdf
+1st step/
+acco finetech/
+
+# OS metadata & temporary files
+.DS_Store
+Thumbs.db
+*.tmp
