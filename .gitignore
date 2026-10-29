@@ -1,9 +1,16 @@
 # Private invoice files & client billing records
-*.jpg
-*.jpeg
+*bill*.jpg
+*bill*.jpeg
 *.pdf
 1st step/
 acco finetech/
+
+# Large raw video exports exceeding GitHub 100MB limit (optimized versions are tracked)
+rells and posts/1st STEP VENNALA .mp4
+rells and posts/INFINITI REEL 2.mp4
+
+# Duplicate downloads
+rells and posts/*(1).mp4
 
 # OS metadata & temporary files
 .DS_Store

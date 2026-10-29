@@ -345,148 +345,284 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // --- Creative Works Data (Reels & Posters) ---
+  // --- Creative Works Data (Real Reels & Posters from "rells and posts") ---
   const reelsData = [
     {
       id: 'reel-1',
-      client: 'Infinity Groom (Infiniti Groom Concepts)',
-      title: 'Luxury Groom Styling & Wedding Wear Transitions',
-      duration: '0:30',
+      client: 'Infinity Groom',
+      title: 'Luxury Groom Styling & Wedding Tuxedo Transitions',
+      duration: '0:42',
       views: '850K+',
       likes: '32.4K',
-      shares: '8.9K',
+      shares: '8.2K',
+      videoSrc: 'rells and posts/INFINITY_REEL_01.mp4',
       audio: 'Original Audio — Full Pocket Audio Lab',
-      description: 'Cinematic fashion brand shoot featuring bespoke wedding groom wear, dynamic fabric texture closeups, synchronized beat cuts, and viral creator transitions across Kerala.',
-      tags: ['Men\'s Fashion', 'Wedding Styling', 'Viral Reels', 'Color Grading'],
-      bgGradient: 'from-[#1c1208] via-[#0d1624] to-[#050b14]'
+      description: 'Cinematic on-location fashion shoot capturing bespoke wedding tuxedo tailoring, fabric textures, and fast-paced styling transitions.',
+      tags: ['Fashion Shoot', 'Luxury Tailoring', 'Reels Direction', 'Wedding Concept']
     },
     {
       id: 'reel-2',
-      client: 'Dream Gym & Fitness Club',
-      title: 'Unleash The Beast: Heavy Iron Barbell Lift Motivation',
-      duration: '0:25',
-      views: '520K+',
-      likes: '21.8K',
-      shares: '5.2K',
-      audio: 'Workout Hype Phonk Beats — Dream Gym Sessions',
-      description: 'High-energy fitness hype reel captured with speed ramping, dynamic low-angle tracking shots, gym floor ambient audio, and member transformation spotlights.',
-      tags: ['Gym Commercial', 'Fitness Motivation', 'Speed Ramping', 'Sound Design'],
-      bgGradient: 'from-[#0e210a] via-[#09181d] to-[#040e16]'
-    },
-    {
-      id: 'reel-3',
-      client: '1st Step Baby Shop (Panampilly & Vennala)',
-      title: 'Boutique Baby Gear, Toddler Fashion & Store Walkthrough',
-      duration: '0:40',
+      client: '1st Step Baby Shop',
+      title: 'Panampilly Nagar Store Grand Opening & Influencer Walkthrough',
+      duration: '0:38',
       views: '450K+',
       likes: '19.6K',
       shares: '4.8K',
-      audio: 'Lifestyle Acoustic Pop — Kerala Creators',
-      description: 'Warm, engaging lifestyle store walkthrough highlighting nursery essentials, organic toddler clothing, and interactive creator shopping experiences.',
-      tags: ['Store Walkthrough', 'Creator Campaign', 'Baby Boutique', 'Retail Growth'],
-      bgGradient: 'from-[#113156] via-[#0b203a] to-[#040e1b]'
+      videoSrc: 'rells and posts/1ST STEP P.PILLY REEL 01.mp4',
+      audio: 'Creator Audio — 1st Step Launch',
+      description: 'High-energy creator walkthrough across the flagship Panampilly Nagar store, spotlighting toddler couture, strollers, and nursery essentials.',
+      tags: ['Store Walkthrough', 'Influencer Marketing', 'Retail Growth', 'Kochi']
+    },
+    {
+      id: 'reel-3',
+      client: 'Jerusalem Bus Body Builders',
+      title: 'Workshop Fabrication & Heavy Chassis Engineering',
+      duration: '0:32',
+      views: '210K+',
+      likes: '16.2K',
+      shares: '5.1K',
+      videoSrc: 'rells and posts/JERUSALEM REEL 04.mp4',
+      audio: 'Heavy Industrial Bass & Sound Design',
+      description: 'Industrial craftsmanship film spotlighting steel structural fabrication, precision welding, and aerodynamic chassis building at the Puthukkad workshop.',
+      tags: ['Industrial Media', 'Vehicle Fabrication', 'Heavy Engineering', 'Commercial Shoots']
     },
     {
       id: 'reel-4',
-      client: 'Jerusalem Bus Body Builders (Thrissur)',
-      title: 'Forged For The Highways: Industrial Bus Fabrication & Finish',
-      duration: '0:45',
-      views: '180K+',
-      likes: '14.2K',
-      shares: '3.1K',
-      audio: 'Heavy Industrial Bass & Sound Design',
-      description: 'Cinematic industrial documentary-style vertical video featuring metal fabrication, welding spark macros, paint booth finishes, and transport fleet delivery.',
-      tags: ['Industrial Shoot', 'Automotive Media', 'Macro Video', 'Documentary'],
-      bgGradient: 'from-[#1c1813] via-[#141d28] to-[#07111b]'
+      client: 'KR Furniture Studio',
+      title: 'Modern Teak Woodcraft & Showroom Living Walkthrough',
+      duration: '0:35',
+      views: '320K+',
+      likes: '14.8K',
+      shares: '3.9K',
+      videoSrc: 'rells and posts/KR FURNITURE REEL_03.mp4',
+      audio: 'Aesthetic Chillhop Beats',
+      description: 'Cinematic studio walkthrough capturing luxury custom living room setups, grain textures, and hand-finished teak wood furniture.',
+      tags: ['Interior Video', 'Teak Woodcraft', 'Showroom Tour', 'Furniture Reels']
     },
     {
       id: 'reel-5',
-      client: 'CEA The Automation Experts (Thrissur)',
-      title: 'One-Touch Control: Smart Switches, Gates & Villa Ambiance',
+      client: 'Infinity Groom',
+      title: 'Bespoke Men\'s Styling & Royal Wedding Collection',
       duration: '0:30',
-      views: '290K+',
-      likes: '11.5K',
-      shares: '2.7K',
-      audio: 'Futuristic Ambient Tech Score',
-      description: 'Sleek luxury villa automation demonstration reel showing live smart touch switches, motorized gate control via smartphone, and custom architectural mood lighting.',
-      tags: ['Smart Home Tech', 'B2B Demo', 'Motion Graphics', 'Lead Gen'],
-      bgGradient: 'from-[#0a1e35] via-[#07172a] to-[#030b14]'
+      views: '490K+',
+      likes: '22.5K',
+      shares: '6.3K',
+      videoSrc: 'rells and posts/INFINITI REEL  02.mp4',
+      audio: 'Trending Audio — Royal Groom Beats',
+      description: 'Luxury bridal & groom shoot featuring designer sherwanis, precision silhouettes, and royal wedding aesthetics across Kerala.',
+      tags: ['Bridal & Groom', 'Men\'s Fashion', 'Trend Audio', 'Statewide Reach']
     },
     {
       id: 'reel-6',
-      client: 'Jyothi Nivas Public School (Aluva)',
-      title: 'Empowering Young Minds: Academics, Sports & Arts Festival',
-      duration: '0:35',
+      client: '1st Step Baby Shop',
+      title: 'Vennala Store Walkthrough & Toddler Couture Showcase',
+      duration: '0:40',
+      views: '380K+',
+      likes: '17.4K',
+      shares: '4.2K',
+      videoSrc: 'rells and posts/1ST STEP VENNALA  02.mp4',
+      audio: 'Happy Lifestyle Beats',
+      description: 'Vibrant retail showcase reel capturing baby care ranges, toddler play gear, and customer experience at the Vennala Kochi branch.',
+      tags: ['Vennala Branch', 'Retail Shoot', 'Baby Couture', 'Social Reach']
+    },
+    {
+      id: 'reel-7',
+      client: 'Jerusalem Bus Body Builders',
+      title: 'Finished Highway Cruiser Coach Delivery & Road Showcase',
+      duration: '0:28',
+      views: '260K+',
+      likes: '18.9K',
+      shares: '7.4K',
+      videoSrc: 'rells and posts/JERUSALEM REEL 06.MP4',
+      audio: 'Highway Cruiser Soundtrack',
+      description: 'Dynamic highway showcase film highlighting multi-axle luxury tourist coaches with custom interior ambient lighting and aerodynamic styling.',
+      tags: ['Highway Cruiser', 'Coach Delivery', 'Automotive Video', 'Viral Reach']
+    },
+    {
+      id: 'reel-8',
+      client: 'KR Furniture Studio',
+      title: 'Custom Sofa Craftsmanship & Dining Collection',
+      duration: '0:36',
+      views: '290K+',
+      likes: '12.6K',
+      shares: '3.1K',
+      videoSrc: 'rells and posts/KR FURNITURE REEL_04.mp4',
+      audio: 'Smooth Interior Score',
+      description: 'Sensory macro shots capturing upholstery detailing, ergonomic dining craftsmanship, and contemporary home decor in Thrissur.',
+      tags: ['Custom Sofas', 'Dining Sets', 'Macro Video', 'Showroom Sales']
+    },
+    {
+      id: 'reel-9',
+      client: '1st Step Baby Shop',
+      title: 'Daily Baby Essentials & Infant Care Spotlight',
+      duration: '0:26',
       views: '310K+',
+      likes: '15.1K',
+      shares: '3.6K',
+      videoSrc: 'rells and posts/1ST STEP P.PILLY REEL 03.mp4',
+      audio: 'Gentle Parenting Audio',
+      description: 'Engaging mobile-first vertical reel highlighting daily baby essentials, organic cotton wear, and parental comfort items.',
+      tags: ['Baby Essentials', 'Mobile-First', 'Panampilly Nagar', 'Creator Reels']
+    },
+    {
+      id: 'reel-10',
+      client: 'Jerusalem Bus Body Builders',
+      title: 'Precision Spray Painting & Neon Ambient Lighting',
+      duration: '0:30',
+      views: '240K+',
       likes: '15.8K',
-      shares: '3.9K',
-      audio: 'Inspiring Youth Academic Anthem',
-      description: 'Vibrant, fast-paced vertical video montage showcasing modern campus facilities, science labs, annual cultural day performances, and student athletics.',
-      tags: ['Campus Media', 'Admissions Campaign', 'Student Life', 'Video Editing'],
-      bgGradient: 'from-[#112440] via-[#0b182d] to-[#050d18]'
+      shares: '5.9K',
+      videoSrc: 'rells and posts/JERUSALEM REEL 05.mp4',
+      audio: 'Workshop Electro Bass',
+      description: 'Sleek behind-the-scenes production footage featuring automated spray painting booths, custom body graphics, and neon cockpit installations.',
+      tags: ['Spray Paint Booth', 'Neon Lighting', 'Workshop BTS', 'Fleet Production']
     }
   ];
 
   const postersData = [
     {
       id: 'poster-1',
-      client: 'Seven Bells',
-      title: 'Exclusive Nightlife Sessions & VIP Pass Event Poster',
-      format: 'Print Collateral & 4:5 Instagram Feed',
-      brief: 'Crafted a dark-mode luxury Art Deco visual identity poster series for Seven Bells weekend club nights, blending rich gold typography with acoustic soundwave vectors.',
-      dimensions: 'A2 Print (420 x 594 mm) + 1080 x 1350px Social',
-      colors: ['#070B12', '#D4AF37', '#0E4B8A', '#E2E8F0'],
-      capabilities: ['Visual Identity', 'Typography Direction', 'Art Deco Layout', 'Print Production']
+      client: 'Seven Bells Music Academy',
+      title: 'Vidyarambham Classical Music & Arts Admissions',
+      category: 'Academy Admissions',
+      format: '3:4 Print & Social Poster',
+      brief: 'Bespoke festive admissions poster for Trinity College London affiliated Seven Bells Music Academy in Irinjalakuda, featuring traditional Vidyarambham instruments and vocal arts in warm golden hues.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-15 at 3.15.57 PM.jpeg',
+      colors: ['#D4AF37', '#1E120A', '#F5EBE1', '#0E4B8A'],
+      capabilities: ['Art Direction', 'Cultural Typography', 'Photo Retouching', 'Print Collateral']
     },
     {
       id: 'poster-2',
-      client: 'KR Furniture Studio (Chevoor, Thrissur)',
-      title: 'Architectural Minimal Living & Teak Woodwork Poster',
-      format: 'Showroom Wall Display & Digital Catalog',
-      brief: 'Developed clean, Swiss-inspired minimalist catalog posters highlighting custom teak furniture, modular living setups, and showroom coordinates.',
-      dimensions: 'Showroom Board (24 x 36 in) + 1080 x 1350px Social',
-      colors: ['#0D1622', '#C6EB1A', '#B47A44', '#FFFFFF'],
-      capabilities: ['Editorial Design', 'Product Staging', 'Showroom Collateral', 'Minimalism']
+      client: 'Dream Gym Family Fitness Centre',
+      title: 'Dasan & Vijayan Malayalam Pop-Culture Meme Campaign',
+      category: 'Viral Social Meme',
+      format: '3:4 Instagram Feed & Story',
+      brief: 'High-engagement Malayalam cinema pop-culture illustration turning everyday fitness excuses into viral social banter for Dream Gym Family Fitness Centre.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-16 at 2.56.10 PM.jpeg',
+      colors: ['#0E141D', '#F4C542', '#E1251B', '#FFFFFF'],
+      capabilities: ['Pop Culture Humor', 'Character Illustration', 'Viral Copywriting', 'Social Engagement']
     },
     {
       id: 'poster-3',
-      client: 'Dream Gym & Fitness Club',
-      title: '90-Day Summer Shred Transformation Challenge Poster',
-      format: 'High-Impact Street Billboard & Gym Entrance',
-      brief: 'High-contrast brutalist poster using electric lime branding and bold geometric type to drive instant member challenge signups and registration excitement.',
-      dimensions: 'Large Billboard (10 x 8 ft) + A3 Gym Poster',
-      colors: ['#081220', '#C6EB1A', '#143154', '#FFFFFF'],
-      capabilities: ['Brutalist Typography', 'Campaign Key Art', 'Call-to-Action Design', 'Billboard']
+      client: 'Dream Gym Family Fitness Centre',
+      title: 'Ayudha Pooja Festive Fitness Motivation',
+      category: 'Festive Campaign',
+      format: '3:4 Instagram Feed & Gym Display',
+      brief: 'Cinematic back-lit fitness creative connecting sacred Ayudha Pooja discipline with daily bodybuilding and wellness dedication at Dream Gym.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-19 at 1.58.05 PM.jpeg',
+      colors: ['#181A12', '#FFAE00', '#E52D27', '#EBEBEB'],
+      capabilities: ['Lighting Direction', 'Brush Typography', 'Festival Creative', 'Brand Positioning']
     },
     {
       id: 'poster-4',
-      client: '1st Step Baby Shop (Panampilly & Vennala)',
-      title: 'Festive Toddler & Baby Wear Collection Grand Launch',
-      format: 'In-Store POS Posters & Mall Display',
-      brief: 'Playful yet sophisticated brand campaign poster spotlighting festive babywear collections, organic cotton lines, and dual store opening announcements.',
-      dimensions: 'Mall Standee (2 x 5 ft) + 1080 x 1350px Feed',
-      colors: ['#0A1A30', '#38BDF8', '#F472B6', '#FFFFFF'],
-      capabilities: ['Retail Branding', 'Seasonal Campaign', 'Vector Illustration', 'POS Assets']
+      client: 'Sree Bhadra Furniture Palace',
+      title: 'Vijayadashami Heritage Woodcraft & Blessings',
+      category: 'Heritage Branding',
+      format: '3:4 Festival Print & Digital Ad',
+      brief: 'Rich crimson cultural branding for Sree Bhadra Furniture Palace (Ayoor & Anchal) celebrating the timeless bond between generations and handcrafted furniture heritage.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-19 at 12.47.02 PM.jpeg',
+      colors: ['#881D27', '#E0F075', '#D4AF37', '#FDF8F2'],
+      capabilities: ['Cultural Storytelling', 'Malayalam Calligraphy', 'Emotional Branding', 'Print Ad']
     },
     {
       id: 'poster-5',
-      client: 'CEA The Automation Experts (Thrissur)',
-      title: 'Architectural Smart Home & Villa Automation Masterclass',
-      format: 'B2B Architect Summit Invitation & Tech Blueprint',
-      brief: 'Technical blueprint-style poster with isometric smart villa schematics, smart switch icons, and architect forum invitation details.',
-      dimensions: 'A1 Exhibition Poster + Digital Invitation Kit',
-      colors: ['#051528', '#0E4B8A', '#38BDF8', '#C6EB1A'],
-      capabilities: ['Schematic Design', 'B2B Marketing', 'Isometric Graphics', 'Event Branding']
+      client: 'CEA The Automation Experts',
+      title: 'Vijayadashami Smart Touch Automation Poster',
+      category: 'Smart Tech Media',
+      format: '3:4 Architectural Tech Poster',
+      brief: 'Minimalist luxury smart home creative spotlighting digital temperature and light controls harmonized with traditional festival warmth for CEA The Automation Experts.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-19 at 3.31.38 PM.jpeg',
+      colors: ['#D1BBA3', '#2D2D2D', '#D96B27', '#0E4B8A'],
+      capabilities: ['Tech Minimalism', 'Product Compositing', 'Luxury Tech Copy', 'Brand Identity']
     },
     {
       id: 'poster-6',
-      client: 'Seven Bells',
-      title: 'Sunset Sessions: Weekend Acoustic Lounge & Cocktails',
-      format: 'Digital Social Art & Table Tent Cards',
-      brief: 'Atmospheric neon sunset aesthetic blending purple/magenta twilight gradients with acoustic guitar silhouettes and weekend cocktail tasting menus.',
-      dimensions: 'Table Tents (A5) + 1080 x 1350px Social Poster',
-      colors: ['#1B0826', '#E879F9', '#0E4B8A', '#C6EB1A'],
-      capabilities: ['Atmospheric Art', 'Menu Design', 'Nightlife Promo', 'Color Harmony']
+      client: '1st Step Baby Shop',
+      title: 'Aloe Vera Baby Wipes Commercial Product Campaign',
+      category: 'Product Ad Creative',
+      format: '3:4 Commercial Ad Creative',
+      brief: 'Clean, dermatologically-focused product campaign poster for 1st Step Baby Shop (Vennala, Kochi) highlighting natural aloe vera extracts, zero alcohol, and pure hydration.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-21 at 1.32.43 PM.jpeg',
+      colors: ['#00A896', '#FFA400', '#F0F9F8', '#333333'],
+      capabilities: ['Commercial Product Design', 'Packaging Highlight', 'Trust Badges', 'Retail Marketing']
+    },
+    {
+      id: 'poster-7',
+      client: 'Urban Company',
+      title: 'Machine-Powered Deep Clean Campaign (Malayalam)',
+      category: 'Performance Ad Campaign',
+      format: '1179 x 1587 px High-ROI Ad Creative',
+      brief: 'Localized high-conversion service promotion ad for Urban Company tackling stubborn bathroom grime with high-speed machine polish technology and direct coupon code triggers.',
+      dimensions: '1179 x 1587 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-21 at 12.35.02 PM.jpeg',
+      colors: ['#6C5CE7', '#1D1D1D', '#55EFC4', '#FFFFFF'],
+      capabilities: ['Direct Response Ad', 'Local Language Hook', 'Action Callout', 'High-Converting Layout']
+    },
+    {
+      id: 'poster-8',
+      client: 'Dream Gym Family Fitness Centre',
+      title: 'Thoppumpady Branch Grand Opening Announcement',
+      category: 'Branch Expansion',
+      format: '3:4 High-Contrast Teaser Graphic',
+      brief: 'Bold minimalist launch banner announcing Dream Gym\'s premier fitness expansion into Thoppumpady, connecting the established network across Kaloor and Kadavanthra.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-21 at 12.51.12 PM.jpeg',
+      colors: ['#070707', '#E52D27', '#0084FF', '#FAFA00'],
+      capabilities: ['High-Impact Typography', 'Network Expansion', 'Geo-Targeting', 'Brand Consistency']
+    },
+    {
+      id: 'poster-9',
+      client: 'Dream Gym Family Fitness Centre',
+      title: 'Murthy & Coach Comic Illustration Campaign',
+      category: 'Character Illustration',
+      format: '3:4 Comic Strip Art Poster',
+      brief: 'Graphic novel style gym humor strip depicting the classic workout banter between a stunned trainer and comic lifter Murthy, generating massive organic shareability.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-21 at 12.51.13 PM.jpeg',
+      colors: ['#182333', '#FFAE00', '#FF4757', '#F1F2F6'],
+      capabilities: ['Comic Illustration', 'Speech Bubble Copy', 'Pop Character Design', 'Viral Social Storytelling']
+    },
+    {
+      id: 'poster-10',
+      client: '1st Step Baby Shop',
+      title: 'Gentle Care & Motherhood Product Campaign',
+      category: 'Brand Photography & Ad',
+      format: '3:4 Commercial Lifestyle Creative',
+      brief: 'Heartfelt commercial product ad blending soft nursery lighting, maternal warmth, and natural cotton elements showcasing 1st Step\'s premium infant wipes line.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-21 at 3.09.47 PM.jpeg',
+      colors: ['#00A896', '#FFA400', '#F8F6F0', '#4A4A4A'],
+      capabilities: ['Lifestyle Ad Design', 'Warm Editorial Tone', 'Feature Highlighting', 'Parenting Trust']
+    },
+    {
+      id: 'poster-11',
+      client: 'Seven Bells Music Academy',
+      title: 'From Small Steps to Great Musical Dreams',
+      category: 'Classical Academy Admissions',
+      format: '3:4 Classical Music Academy Poster',
+      brief: 'Trinity College London accredited youth enrollment poster for Seven Bells Academy in Irinjalakuda, spotlighting vocal, violin, and tabla students on their musical journey.',
+      dimensions: '1080 x 1440 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-22 at 11.35.35 AM.jpeg',
+      colors: ['#6BBF2B', '#1C2818', '#FAF6EE', '#0E4B8A'],
+      capabilities: ['Malayalam 3D Typography', 'Classical Art Direction', 'Aesthetic Retouching', 'Print Production']
+    },
+    {
+      id: 'poster-12',
+      client: 'Jerusalem Bus Body Builders',
+      title: 'Industrial Tourist Bus Fleet Panorama Showcase',
+      category: 'Automotive Industrial Banner',
+      format: '1080 x 477 px 3-Grid Instagram Showcase Banner',
+      brief: 'Cinematic 3-grid Instagram hero panorama showcasing Jerusalem Bus Body Builders\' flagship tourist cruiser coaches lined up at the Kanjoor Puthukkad workshop.',
+      dimensions: '1080 x 477 px',
+      imageSrc: 'rells and posts/WhatsApp Image 2026-10-22 at 2.08.15 PM.jpeg',
+      colors: ['#0E1117', '#E53E3E', '#A0AEC0', '#FFFFFF'],
+      capabilities: ['3D Chrome Lettering', 'Multi-Vehicle Compositing', 'Atmospheric Fog & Lighting', 'Fleet Branding']
     }
   ];
 
@@ -505,7 +641,8 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('bg-[#C6EB1A]', 'text-[#081220]', 'font-bold');
 
       const filterVal = btn.getAttribute('data-work-filter');
-      workCards.forEach(card => {
+      const allCards = document.querySelectorAll('.work-card');
+      allCards.forEach(card => {
         const cardType = card.getAttribute('data-work-type');
         if (filterVal === 'all' || cardType === filterVal) {
           card.classList.remove('hidden');
@@ -534,56 +671,47 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!reel || !reelModal || !reelModalContent) return;
 
     reelModalContent.innerHTML = `
-      <div class="relative bg-gradient-to-b ${reel.bgGradient} p-6 aspect-reel flex flex-col justify-between overflow-hidden">
-        <!-- Top phone status & header -->
-        <div class="flex items-center justify-between text-xs text-white z-10 pt-2">
+      <div class="relative bg-black aspect-reel flex flex-col justify-between overflow-hidden rounded-[32px] max-h-[88vh]">
+        <!-- Top phone status & header overlay -->
+        <div class="absolute top-0 inset-x-0 p-4 bg-gradient-to-b from-black/90 via-black/50 to-transparent z-20 flex items-center justify-between">
           <div class="flex items-center gap-2">
             <div class="w-8 h-8 rounded-full bg-[#0E4B8A] border border-[#C6EB1A] flex items-center justify-center font-bold text-xs text-[#C6EB1A]">
               FP
             </div>
             <div>
-              <div class="font-bold flex items-center gap-1">
+              <div class="text-xs font-bold text-white flex items-center gap-1">
                 @fullpocketcreations
                 <svg class="w-3.5 h-3.5 text-blue-400 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
               </div>
               <div class="text-[10px] text-slate-300">${reel.client}</div>
             </div>
           </div>
+          <span class="text-[10px] font-mono text-[#C6EB1A] bg-[#081220]/80 px-2 py-0.5 rounded border border-[#C6EB1A]/40 mr-8">
+            ${reel.views} Views
+          </span>
         </div>
 
-        <!-- Simulated Video Stage & Interactive Progress -->
-        <div class="my-auto flex flex-col items-center justify-center text-center z-10 py-6">
-          <div class="w-20 h-20 rounded-full bg-[#C6EB1A] text-[#081220] flex items-center justify-center shadow-2xl play-pulse mb-4">
-            <svg class="w-9 h-9 translate-x-0.5 text-[#081220]" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          </div>
-          <span class="text-xs font-black uppercase tracking-widest text-[#C6EB1A] px-3 py-1 rounded-full bg-black/60 border border-[#C6EB1A]/40">
-            Playing Reel Preview
-          </span>
-          <div class="w-full max-w-[200px] h-1.5 bg-slate-700 rounded-full overflow-hidden mt-4">
-            <div class="h-full bg-[#C6EB1A] rounded-full animate-pulse" style="width: 72%;"></div>
-          </div>
-          <div class="flex items-center justify-between w-full max-w-[200px] text-[10px] text-slate-300 mt-1 font-mono">
-            <span>0:18</span>
-            <span>${reel.duration}</span>
-          </div>
+        <!-- Real HTML5 Video Player -->
+        <div class="w-full h-full flex-1 flex items-center justify-center bg-black min-h-[460px]">
+          <video id="active-reel-video" src="${reel.videoSrc}" controls autoplay playsinline loop class="w-full h-full object-cover bg-black"></video>
         </div>
 
         <!-- Reel Meta Info & Instagram Link -->
-        <div class="z-10 space-y-3 pb-2 bg-gradient-to-t from-black/90 via-black/50 to-transparent -mx-6 -mb-6 p-6">
-          <h3 class="text-sm sm:text-base font-bold text-white font-heading">${reel.title}</h3>
+        <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-black via-black/85 to-transparent z-20 space-y-2.5">
+          <h3 class="text-sm font-bold text-white font-heading">${reel.title}</h3>
           <p class="text-xs text-slate-300 line-clamp-2">${reel.description}</p>
           
           <div class="flex flex-wrap gap-1.5 pt-1">
-            ${reel.tags.map(t => `<span class="text-[10px] px-2 py-0.5 rounded bg-[#0E4B8A]/60 text-slate-200 border border-[#0E4B8A]">${t}</span>`).join('')}
+            ${reel.tags.map(t => `<span class="text-[10px] px-2 py-0.5 rounded bg-[#0E4B8A]/70 text-slate-200 border border-[#0E4B8A]">${t}</span>`).join('')}
           </div>
 
           <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
-            <div class="flex items-center gap-4 text-slate-300">
-              <span class="text-[#C6EB1A] font-bold">${reel.views} Views</span>
+            <div class="flex items-center gap-3 text-slate-300">
+              <span class="text-[#C6EB1A] font-bold">${reel.views}</span>
               <span>♥ ${reel.likes}</span>
               <span>↗ ${reel.shares}</span>
             </div>
-            <a href="https://www.instagram.com/fullpocketcreations/" target="_blank" class="btn-lime px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-lg">
+            <a href="https://www.instagram.com/fullpocketcreations/" target="_blank" class="btn-lime px-3.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-lg">
               <span>Watch on IG</span>
               <svg class="w-3.5 h-3.5 text-[#081220]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
@@ -598,18 +726,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function closeReelModal() {
     if (!reelModal) return;
+    const activeVideo = document.getElementById('active-reel-video');
+    if (activeVideo) {
+      activeVideo.pause();
+      activeVideo.src = '';
+    }
     reelModal.classList.add('hidden');
     document.body.style.overflow = '';
   }
-
-  // Attach reel click triggers
-  document.querySelectorAll('.open-reel-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const reelId = btn.getAttribute('data-reel-id');
-      openReelModal(reelId);
-    });
-  });
 
   if (reelCloseBtn) reelCloseBtn.addEventListener('click', closeReelModal);
   if (reelBackdrop) reelBackdrop.addEventListener('click', closeReelModal);
@@ -626,45 +750,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     posterModalContent.innerHTML = `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- Poster Art Container -->
-        <div class="rounded-2xl p-6 bg-[#060F1A] border-2 border-[#0E4B8A] shadow-2xl relative overflow-hidden aspect-poster flex flex-col justify-between text-center">
-          <div class="border-b border-[#0E4B8A]/50 pb-3">
-            <span class="text-[9px] uppercase tracking-widest text-[#C6EB1A] font-bold block">${poster.client}</span>
-            <h4 class="text-xl font-black text-white font-heading mt-1">${poster.title}</h4>
-          </div>
-
-          <div class="my-auto py-6">
-            <div class="w-16 h-16 rounded-full bg-[#0E4B8A]/40 border-2 border-[#C6EB1A] mx-auto flex items-center justify-center text-[#C6EB1A] mb-3">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            </div>
-            <div class="text-xs font-bold text-slate-300">High-Resolution Visual Key Art</div>
-            <div class="text-[10px] text-slate-400 mt-1 font-mono">${poster.dimensions}</div>
-          </div>
-
-          <div class="pt-3 border-t border-[#0E4B8A]/50 flex items-center justify-between text-[10px] text-slate-400">
-            <span>Official Client Asset</span>
-            <span class="text-[#C6EB1A] font-bold font-mono">Full Pocket Studio</span>
-          </div>
+        <!-- High-Resolution Real Poster Image Container -->
+        <div class="rounded-2xl p-2 bg-black/60 border border-[#0E4B8A]/50 shadow-2xl flex items-center justify-center">
+          <img src="${poster.imageSrc}" alt="${poster.title}" class="max-h-[70vh] w-auto object-contain rounded-xl shadow-2xl" />
         </div>
 
         <!-- Poster Details & Specifications -->
         <div class="space-y-5">
           <div>
             <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#C6EB1A]/15 text-[#C6EB1A] border border-[#C6EB1A]/30 mb-2">
-              ${poster.format}
+              ${poster.category}
             </span>
             <h3 class="text-2xl font-bold text-white font-heading">${poster.title}</h3>
             <p class="text-xs text-slate-400 mt-1 font-mono">Client: ${poster.client}</p>
           </div>
 
           <div>
-            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Design Brief & Direction</h4>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Design Brief & Creative Direction</h4>
             <p class="text-slate-300 text-sm leading-relaxed">${poster.brief}</p>
           </div>
 
           <div>
             <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Color Palette Swatches</h4>
-            <div class="flex items-center gap-2">
+            <div class="flex flex-wrap items-center gap-2">
               ${poster.colors.map(c => `
                 <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#0E2038] border border-[#0E4B8A]/40">
                   <div class="w-3.5 h-3.5 rounded-full border border-white/20" style="background-color: ${c};"></div>
@@ -684,7 +792,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
 
           <div class="pt-4 border-t border-[#0E4B8A]/40 flex items-center justify-between">
-            <span class="text-xs text-slate-400">Need custom brand posters?</span>
+            <span class="text-xs text-slate-400">Resolution: <span class="font-mono text-slate-300">${poster.dimensions}</span></span>
             <a href="#contact" onclick="closePosterModal()" class="btn-lime px-5 py-2.5 rounded-xl font-bold text-xs">
               Order Custom Posters
             </a>
@@ -703,17 +811,49 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  // Attach poster click triggers
-  document.querySelectorAll('.open-poster-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const posterId = btn.getAttribute('data-poster-id');
-      openPosterModal(posterId);
-    });
-  });
-
   if (posterCloseBtn) posterCloseBtn.addEventListener('click', closePosterModal);
   if (posterBackdrop) posterBackdrop.addEventListener('click', closePosterModal);
+
+  // Global event delegation for modal triggers (reels and posters)
+  document.addEventListener('click', (e) => {
+    const reelBtn = e.target.closest('.open-reel-btn');
+    if (reelBtn) {
+      e.preventDefault();
+      const reelId = reelBtn.getAttribute('data-reel-id');
+      openReelModal(reelId);
+      return;
+    }
+
+    const posterBtn = e.target.closest('.open-poster-btn');
+    if (posterBtn) {
+      e.preventDefault();
+      const posterId = posterBtn.getAttribute('data-poster-id');
+      openPosterModal(posterId);
+      return;
+    }
+  });
+
+  // Close modals on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (reelModal && !reelModal.classList.contains('hidden')) closeReelModal();
+      if (posterModal && !posterModal.classList.contains('hidden')) closePosterModal();
+    }
+  });
+
+  // Desktop Hover Video Preview on Reel Cards
+  document.querySelectorAll('.work-card[data-work-type="reels"]').forEach(card => {
+    const video = card.querySelector('video');
+    if (video) {
+      card.addEventListener('mouseenter', () => {
+        video.play().catch(() => {});
+      });
+      card.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
+  });
 
   // Close any open modal on Escape key
   document.addEventListener('keydown', (e) => {
