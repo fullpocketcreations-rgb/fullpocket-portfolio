@@ -876,14 +876,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Contact Form Submission & Toast ---
+  // --- Contact Form Submission, Email Dispatch (FormSubmit) & WhatsApp Connect ---
   const contactForm = document.getElementById('contact-form');
   const toast = document.getElementById('toast');
+  const toastTitle = document.getElementById('toast-title');
   const toastMessage = document.getElementById('toast-message');
+  const toastActionContainer = document.getElementById('toast-action-container');
+  const toastActionBtn = document.getElementById('toast-action-btn');
+  const inquiryStatusBox = document.getElementById('inquiry-status-box');
+  const directWaLink = document.getElementById('direct-wa-link');
 
-  function showToast(message, isSuccess = true) {
+  let toastTimer = null;
+
+  function showToast(message, isSuccess = true, waUrl = null) {
     if (!toast) return;
-    toastMessage.textContent = message;
+    if (toastTimer) clearTimeout(toastTimer);
+
+    if (toastTitle) {
+      toastTitle.textContent = isSuccess ? 'Inquiry Dispatched' : 'Notification';
+    }
+    if (toastMessage) {
+      toastMessage.textContent = message;
+    }
+
+    if (waUrl && toastActionContainer && toastActionBtn) {
+      toastActionBtn.href = waUrl;
+      toastActionContainer.classList.remove('hidden');
+    } else if (toastActionContainer) {
+      toastActionContainer.classList.add('hidden');
+    }
+
     toast.classList.remove('hidden', 'translate-y-20', 'opacity-0');
     toast.classList.add('translate-y-0', 'opacity-100');
 
@@ -892,12 +914,13 @@ document.addEventListener('DOMContentLoaded', () => {
       toast.classList.add('border-[#C6EB1A]/50', 'bg-[#0A1A30]/95');
     } else {
       toast.classList.add('border-red-500', 'bg-red-950/90');
+      toast.classList.remove('border-[#C6EB1A]/50', 'bg-[#0A1A30]/95');
     }
 
-    setTimeout(() => {
+    toastTimer = setTimeout(() => {
       toast.classList.add('translate-y-20', 'opacity-0');
       setTimeout(() => toast.classList.add('hidden'), 300);
-    }, 4500);
+    }, 7000);
   }
 
   if (contactForm) {
@@ -905,9 +928,13 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       
       const name = document.getElementById('user-name')?.value.trim();
-      const email = document.getElementById('user-email')?.value.trim();
       const brand = document.getElementById('user-brand')?.value.trim();
-      const service = document.getElementById('service-select')?.value;
+      const email = document.getElementById('user-email')?.value.trim();
+      const phone = document.getElementById('user-phone')?.value.trim();
+      const serviceSelect = document.getElementById('service-select');
+      const service = serviceSelect ? (serviceSelect.options[serviceSelect.selectedIndex]?.text || serviceSelect.value) : '';
+      const budgetSelect = document.getElementById('budget-select');
+      const budget = budgetSelect ? (budgetSelect.options[budgetSelect.selectedIndex]?.text || budgetSelect.value) : '';
       const message = document.getElementById('user-message')?.value.trim();
 
       if (!name || !email || !message) {
@@ -915,7 +942,20 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulate successful dispatch
+      // Format WhatsApp Message with full client inquiry details
+      const waMessage = 
+        `🔥 *New Project Inquiry — Full Pocket Creations*\n\n` +
+        `👤 *Name:* ${name}\n` +
+        `🏢 *Brand:* ${brand || 'Not specified'}\n` +
+        `📧 *Email:* ${email}\n` +
+        `📱 *Phone:* ${phone || 'Not specified'}\n` +
+        `🎯 *Service:* ${service}\n` +
+        `💰 *Budget:* ${budget}\n\n` +
+        `📝 *Project Brief:*\n${message}`;
+
+      const waUrl = `https://wa.me/919778799063?text=${encodeURIComponent(waMessage)}`;
+
+      // Update submit button UI with loading animation
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
       submitBtn.disabled = true;
@@ -924,15 +964,50 @@ document.addEventListener('DOMContentLoaded', () => {
           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
           <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
         </svg>
-        Sending Proposal...
+        Sending &amp; Connecting WhatsApp...
       `;
 
-      setTimeout(() => {
+      // 1. Dispatch formatted inquiry directly to Gmail via FormSubmit AJAX endpoint
+      fetch('https://formsubmit.co/ajax/fullpocketcreations@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `New Project Inquiry from ${name} (${brand || 'Full Pocket'})`,
+          _template: 'table',
+          _captcha: 'false',
+          'Client Name': name,
+          'Brand / Business': brand || 'N/A',
+          'Email Address': email,
+          'Phone / WhatsApp': phone || 'N/A',
+          'Primary Service': service,
+          'Budget Range': budget,
+          'Project Brief': message
+        })
+      })
+      .then(res => res.json())
+      .catch(err => {
+        console.log('Dispatch notification note:', err);
+      })
+      .finally(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
         contactForm.reset();
-        showToast(`Thank you, ${name}! Your inquiry for Full Pocket Creations has been received. We will respond within 24 hours.`, true);
-      }, 1000);
+
+        // 2. Reveal in-page confirmation box with direct WhatsApp link
+        if (inquiryStatusBox) {
+          inquiryStatusBox.classList.remove('hidden');
+          if (directWaLink) directWaLink.href = waUrl;
+        }
+
+        // 3. Show Interactive Toast Notification with WhatsApp button
+        showToast(`Thank you, ${name}! Your inquiry has been emailed to fullpocketcreations@gmail.com and is opening on WhatsApp.`, true, waUrl);
+
+        // 4. Automatically open WhatsApp chat in new tab
+        window.open(waUrl, '_blank');
+      });
     });
   }
 });
