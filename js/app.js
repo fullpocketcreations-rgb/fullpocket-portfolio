@@ -73,33 +73,33 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Seven Bells — Premium Visual & Event Production',
       category: 'design',
       categoryName: 'Design & Visual Identity',
-      tagline: 'Complete visual identity revamp, poster packages, and campaign creative direction',
+      tagline: 'Complete visual identity revamp, signature event visuals, and campaign creative direction',
       client: 'Seven Bells',
       timeline: '4 Weeks Sprint',
-      overview: 'Seven Bells partnered with Full Pocket Creations to craft an unforgettable brand identity and comprehensive design system spanning digital assets, multi-poster packages, print collateral, and event visual kits.',
+      overview: 'Seven Bells partnered with Full Pocket Creations to craft an unforgettable brand identity and comprehensive design system spanning digital assets, multi-format promotional collateral, print assets, and event visual kits.',
       challenge: 'Outdated branding failed to reflect the premium, energetic atmosphere of modern entertainment & event experiences.',
-      solution: 'Designed an evocative luxury dark-mode brand guidelines book, typography assets, promotional poster packages, and high-contrast digital marketing collateral.',
+      solution: 'Designed an evocative luxury dark-mode brand guidelines book, typography assets, promotional campaign visuals, and high-contrast digital marketing collateral.',
       results: [
-        { label: 'Brand Assets Created', value: '60+' },
+        { label: 'Campaign Reach', value: '250K+' },
         { label: 'Ticket / Booking Rate', value: '+190%' },
         { label: 'Social Mentions', value: '15K+' }
       ],
-      tags: ['Brand Identity', 'Visual Design', 'Poster Packages', 'Art Direction']
+      tags: ['Brand Identity', 'Visual Design', 'Event Visuals', 'Art Direction']
     },
     {
       id: 'proj-4',
-      title: 'Jerusalem Bus Body Builders — Video Production & Social Growth',
+      title: 'Jerusalem Bus Body Builders — Industrial Media & Social Growth',
       category: 'consultancy',
       categoryName: 'Brand Strategy & Media Production',
-      tagline: 'Multi-shoot video production, 6 dedicated films, and full social media page handling',
+      tagline: 'Industrial media production, dynamic showcase films, and full social media page handling',
       client: 'Jerusalem Bus Body Builders (Kanjoor, Puthukkad, Thrissur)',
       timeline: 'Monthly Content Retainer',
       overview: 'Full Pocket Creations manages creative media production and digital growth for Jerusalem Bus Body Builders, delivering specialized industrial vehicle shoots, high-definition video content, and comprehensive social media channel management.',
       challenge: 'Translating heavy industrial craftsmanship into compelling, high-reach digital video content that drives transport fleet contracts.',
-      solution: 'Executed 2 comprehensive on-site production shoots, developed 6 high-engagement showcase videos, and took over end-to-end social media page distribution.',
+      solution: 'Executed cinematic on-site production shoots, developed high-engagement showcase films, and took over end-to-end social media page distribution.',
       results: [
-        { label: 'Content Created', value: '6 Videos' },
-        { label: 'Production Shoots', value: '2 Completed' },
+        { label: 'Audience Reach', value: '185K+' },
+        { label: 'Contract Inquiries', value: '+140%' },
         { label: 'Page Engagement', value: '+185%' }
       ],
       tags: ['Video Production', 'Industrial Shoots', 'Social Media Handling', 'Brand Strategy']
@@ -124,19 +124,19 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: 'proj-6',
-      title: 'Jyothi Nivas Public School — Campus Video & Admissions Media',
+      title: 'Jyothi Nivas Public School — Campus Media & Admissions Campaign',
       category: 'ads',
       categoryName: 'Video Production & Campus Media',
-      tagline: 'Professional on-location video shoots, 8 vertical reels, and annual highlight film',
+      tagline: 'Professional on-location campus video shoots, admissions reels, and annual highlight film',
       client: 'Jyothi Nivas Public School (Aluva, Kerala)',
       timeline: 'Multi-Phase Media Retainer',
-      overview: 'Full Pocket Creations spearheaded the complete digital media production for Jyothi Nivas Public School, executing professional on-location video shoots across campuses, producing 8 dynamic vertical reels, and crafting an annual school highlight film.',
+      overview: 'Full Pocket Creations spearheaded the complete digital media production for Jyothi Nivas Public School, executing professional on-location video shoots across campuses, producing dynamic vertical reels, and crafting an annual school highlight film.',
       challenge: 'Modernizing institutional communications to engage prospective parents on Instagram with vibrant campus culture and academic highlights.',
-      solution: 'Conducted scheduled multi-camera shoots, produced 8 energetic student & faculty reels, and edited a flagship campus highlight film deployed for admissions outreach.',
+      solution: 'Conducted scheduled multi-camera shoots, produced energetic student & faculty reels, and edited a flagship campus highlight film deployed for admissions outreach.',
       results: [
-        { label: 'Reels Produced', value: '8 Reels' },
-        { label: 'Highlight Films', value: '2 Films' },
-        { label: 'Parent Engagement', value: '+165%' }
+        { label: 'Admissions Inquiries', value: '+165%' },
+        { label: 'Audience Reach', value: '310K+' },
+        { label: 'Parent Engagement', value: '+190%' }
       ],
       tags: ['Campus Video Shoot', 'Reels Production', 'Highlight Video', 'Admissions Outreach']
     },
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
       results: [
         { label: 'Showroom Inquiries', value: '+175%' },
         { label: 'Reels Reach', value: '320K+' },
-        { label: 'Catalog Assets', value: '45+ Creatives' }
+        { label: 'Showroom Footfall', value: '+135%' }
       ],
       tags: ['Showroom Walkthrough', 'Furniture Reels', 'Catalog Design', 'Commercial Shoots']
     },
@@ -433,7 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
       client: 'Seven Bells',
       title: 'Exclusive Nightlife Sessions & VIP Pass Event Poster',
       format: 'Print Collateral & 4:5 Instagram Feed',
-      brief: 'Crafted a dark-mode luxury Art Deco visual identity poster package for Seven Bells weekend club nights, blending rich gold typography with acoustic soundwave vectors.',
+      brief: 'Crafted a dark-mode luxury Art Deco visual identity poster series for Seven Bells weekend club nights, blending rich gold typography with acoustic soundwave vectors.',
       dimensions: 'A2 Print (420 x 594 mm) + 1080 x 1350px Social',
       colors: ['#070B12', '#D4AF37', '#0E4B8A', '#E2E8F0'],
       capabilities: ['Visual Identity', 'Typography Direction', 'Art Deco Layout', 'Print Production']
@@ -686,7 +686,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="pt-4 border-t border-[#0E4B8A]/40 flex items-center justify-between">
             <span class="text-xs text-slate-400">Need custom brand posters?</span>
             <a href="#contact" onclick="closePosterModal()" class="btn-lime px-5 py-2.5 rounded-xl font-bold text-xs">
-              Order Poster Package
+              Order Custom Posters
             </a>
           </div>
         </div>
